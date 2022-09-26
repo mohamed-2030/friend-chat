@@ -159,6 +159,8 @@ code {
             display: flex;
             align-items: center;
             gap: 10px;
+            cursor: pointer;
+
             img {
               width: 60px;
               height: 60px;
@@ -169,6 +171,9 @@ code {
               color: white;
               font-size: 18px;
             }
+          }
+          .searchResult:hover {
+            background-color: #2f2d52;
           }
         }
       }
@@ -249,6 +254,7 @@ code {
               width: 60px;
               height: 60px;
               border-radius: 50%;
+              object-fit: cover;
             }
             span {
               font-size: 12px;
@@ -274,7 +280,7 @@ code {
           &.owner {
             flex-direction: row-reverse;
             .messageContent {
-                align-items: flex-end;
+              align-items: flex-end;
               p {
                 background-color: #8da4f1;
                 border-radius: 10px 0px 10px 10px;
